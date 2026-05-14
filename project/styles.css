@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: 0.3s;
+    padding: 10px 12px;
+}
+
+.nav-links a:hover {
+    background: gray;
+    opacity: 0.7;
+    color: white;
+    padding: 10px 12px;
+    
+}
+
+.hero {
+    position: relative;
+    /* margin-top: 70px; */
+}
+
+.hero img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position:absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.hero-text span {
+    background: rgba(0,0,0,0.8);
+    padding: 12px 18px;
+    margin-right: 10px;
+    
+}
+
+
+/* container  */
+
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    font-size: 28px;
+}
+
+/* Projects will be under grid layout */
+
+.project-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    position:relative;
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}.project-card span {
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.about-text {
+    margin-bottom: 40px;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.team-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+display: block;
+}
+
+.team-card h3 {
+    margin-top: 15px;
+}
+.team-card span {
+    color: gray;
+    margin: 10px 0;
+}
+
+.team-card button {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    /* these make our cursor how hand form  */
+    cursor: pointer; 
+    background: #eee;
+    transition: 0.3s;
+}
+
+.team-card button:hover {
+    background: #ddd;
+}
