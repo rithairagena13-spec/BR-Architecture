@@ -42,7 +42,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 18px;
     transition: 0.3s;
     padding: 10px 12px;
 }
@@ -153,6 +153,7 @@ section h2 {
     height: 250px;
     object-fit: cover;
 display: block;
+filter: grayscale(70%);
 }
 
 .team-card h3 {
@@ -176,4 +177,28 @@ display: block;
 
 .team-card button:hover {
     background: #ddd;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form input,
+.contact-form textarea{
+    padding: 14px;
+    border: 1px solid #ccc
+    width: 100px;
+}
+.contact-form textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+.contact-form button {
+    width: fit-content;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
 }
