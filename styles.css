@@ -186,8 +186,8 @@ filter: grayscale(70%);
 .contact-form input,
 .contact-form textarea{
     padding: 14px;
-    border: 1px solid #ccc
-    width: 100px;
+    border: 1px solid #ccc;
+    width: 100%;
 }
 .contact-form textarea{
     min-height: 150px;
@@ -210,4 +210,25 @@ footer{
     color: white;
     text-align: center;
     padding: 30px;
+}
+@media (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-img{
+        height: 70vh;
+    }
+    .hero-text h1{
+    font-size: 28px;
+     text-align: center;
+    }
+
+}
+@media (max-width: 600px) {
+    .project-grid,
+.teams-grid{
+    grid-template-columns: 1fr;
+}
+    
 }
