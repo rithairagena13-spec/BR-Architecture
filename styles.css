@@ -202,3 +202,12 @@ filter: grayscale(70%);
     color: white;
     cursor: pointer;
 }
+.image{
+    width: 100%;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
